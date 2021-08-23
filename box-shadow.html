@@ -7,22 +7,29 @@
     <title>Box-shadow</title>
     <style>
       div {
-        background-color: coral;
         height: 300px;
         width: 300px;
-        margin: auto;
-        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 60%);
-        /* inset x-offset y-offset blur spread color */
-        /* spread = shadow membesar
-         * "cahaya mendekat, shadow membesar"
-         * biar cepat, pake web box-shadow generator saja :)
-         *
-         * value inset shadownya kedalam
-         */
+        margin: 50px auto;
+      }
+
+      .satu {
+        /* Multiple shadow */
+        box-shadow: 5px 5px 5px rgba(0, 0, 190, 60%),
+          -5px -5px 5px rgba(0, 190, 0, 60%);
+        background-color: coral;
+      }
+
+      .dua {
+        /* Multiple border */
+        box-shadow: 0 0 5px green, 0 0 0 10px red, 0 0 0 15px blue,
+          0 0 0 20px yellow;
+        background-color: lightseagreen;
+        border-radius: 50%;
       }
     </style>
   </head>
   <body>
-    <div></div>
+    <div class="satu"></div>
+    <div class="dua"></div>
   </body>
 </html>
