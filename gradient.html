@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient</title>
+    <style>
+      div {
+        height: 300px;
+        width: 800px;
+        margin: 20px auto;
+      }
+
+      /* Linear gradient */
+      .satu {
+        /* sederhana (default arahnya kebawah) */
+        background: linear-gradient(red, blue, green, purple);
+        /* warna 1, warna 2, ..., warna n */
+      }
+
+      .dua {
+        /* sintaks lengkap */
+        background: linear-gradient(to bottom right, red, blue);
+        /* sudut (90deg, dll) atau arah (to left, to right, to bottom right, dll), warna 1, warna n */
+      }
+
+      .tiga {
+        /* Color stop */
+        background: linear-gradient(to right, red 60%, blue 83%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+  </body>
+</html>
