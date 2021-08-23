@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opacity</title>
+    <style>
+      body {
+        background-image: url(img/background.png);
+      }
+      .parent {
+        background-color: black;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        opacity: 0.8;
+        /* seluruh elemen yang ada didalam parent akan terpengaruh
+         * value nya 0-1 atau 0-100%
+         */
+      }
+
+      .child {
+        background-color: salmon;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+        opacity: 100%;
+        /* jika child di set opacitu, maka akan transparan terhadap parentnya */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        <h1>Hello World</h1>
+      </div>
+    </div>
+  </body>
+</html>
