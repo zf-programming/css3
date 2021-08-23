@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <style>
+      /** Properti Transform dan Value
+       * Zoom in & zoom out:
+       * scale(angka), scaleX(angka), scaleY(angka)
+       * Memutar:
+       * rotate(deg), rotateX(deg), rotateY(deg)
+       * Miring:
+       * skew(deg), skewX(deg), skewY(deg)
+       * Mengubah posisi
+       * translate(px), translateX(px), translateY(px)
+       */
+      .kotak {
+        background-color: lightskyblue;
+        width: 200px;
+        height: 200px;
+        margin: 80px auto;
+        cursor: pointer;
+        transition: 500ms;
+      }
+
+      .kotak:hover {
+        transform: scale(1.2) rotate(30deg) translate(50px, 100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak"></div>
+  </body>
+</html>
