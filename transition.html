@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        border: 5px solid black;
+        width: 500px;
+        margin: auto;
+      }
+      /* Transition
+       * value dasar: <pilih properti (default all)> <durasi>
+       */
+      .kotak {
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+        transition: 800ms;
+      }
+
+      .container:hover .kotak {
+        background-color: lightseagreen;
+        transform: rotate(360deg);
+        margin-left: 400px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kotak"></div>
+    </div>
+  </body>
+</html>
