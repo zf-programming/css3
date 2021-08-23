@@ -10,25 +10,21 @@
         background-image: url(img/background.png);
       }
       .parent {
-        background-color: black;
+        background-color: rgba(243, 182, 80, 80%);
+        /* red green blue alpha */
         width: 300px;
         height: 300px;
         position: relative;
-        opacity: 0.8;
-        /* seluruh elemen yang ada didalam parent akan terpengaruh
-         * value nya 0-1 atau 0-100%
-         */
       }
 
       .child {
-        background-color: salmon;
+        background-color: hsla(10, 50%, 50%, 100%);
+        /* hue saturation light alpha */
         width: 100px;
         height: 100px;
         position: absolute;
         bottom: -50px;
         right: -50px;
-        opacity: 100%;
-        /* jika child di set opacitu, maka akan transparan terhadap parentnya */
       }
     </style>
   </head>
