@@ -13,7 +13,15 @@
       }
 
       .kotak:hover {
-        animation: animasiKotak 1s ease;
+        animation-name: animasiKotak; /* nama keyframe */
+        animation-duration: 800ms; /* sama spt transition */
+        animation-timing-function: ease; /* sama spt transition */
+        animation-delay: 500ms; /* sama spt transition */
+        animation-iteration-count: 3; /* perulangan(angka | infinite) */
+        animation-direction: alternate; /* alur animasi */
+        animation-fill-mode: forwards; /* menentukan akhir transisi */
+        animation-play-state: running; /* play pause animasi */
+        /* atau bisa menggunakan shorthand animation (urutan bebas) */
       }
 
       @keyframes animasiKotak {
