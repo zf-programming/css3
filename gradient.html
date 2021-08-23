@@ -12,22 +12,33 @@
         margin: 20px auto;
       }
 
-      /* Linear gradient */
+      /* Radial gradient (Memusat/bulat) */
       .satu {
-        /* sederhana (default arahnya kebawah) */
-        background: linear-gradient(red, blue, green, purple);
+        /* sederhana */
+        background: radial-gradient(red, blue, green);
         /* warna 1, warna 2, ..., warna n */
       }
 
       .dua {
         /* sintaks lengkap */
-        background: linear-gradient(to bottom right, red, blue);
-        /* sudut (90deg, dll) atau arah (to left, to right, to bottom right, dll), warna 1, warna n */
+        background: radial-gradient(
+          circle farthest-corner at top right,
+          red,
+          blue
+        );
+        /* <tipe> <jangkauan> at <posisi-y> <posisi-x> <warna 1>, <warna n>
+         * tipe : circle, ellipse
+         * jangkauan :
+         *         closest-corner: jarak pusat ke sudut terdekat
+         *         closest-side: jarak pusat ke sisi terdekat
+         *         farthest-corner
+         *         farthest-side
+         */
       }
 
       .tiga {
         /* Color stop */
-        background: linear-gradient(to right, red 60%, blue 83%);
+        background: radial-gradient(red 60%, blue 83%);
       }
     </style>
   </head>
