@@ -17,13 +17,14 @@
         margin: auto;
       }
       /* Transition
-       * value dasar: <pilih properti (default all)> <durasi>
+       * value lengkap: <pilih properti> <durasi> <function> <delay;
+       * timing function:  ease, ease-in, ease-out, ease-in-out, linear, cubic-bezier(w, x, y, z)
        */
       .kotak {
         width: 100px;
         height: 100px;
         background-color: lightcoral;
-        transition: 800ms;
+        margin: 5px;
       }
 
       .container:hover .kotak {
@@ -32,11 +33,35 @@
         margin-left: 400px;
         border-radius: 50%;
       }
+
+      .kotak1 {
+        transition: all 1s ease;
+      }
+      .kotak2 {
+        transition: all 1s ease-in;
+      }
+      .kotak3 {
+        transition: all 1s ease-out;
+      }
+      .kotak4 {
+        transition: all 1s ease-in-out;
+      }
+      .kotak5 {
+        transition: all 1s linear;
+      }
+      .kotak6 {
+        transition: all 1s cubic-bezier(0.21, 0.74, 0.79, 0.32);
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="kotak"></div>
+      <div class="kotak kotak1">ease</div>
+      <div class="kotak kotak2">ease-in</div>
+      <div class="kotak kotak3">ease-out</div>
+      <div class="kotak kotak4">ease-in-out</div>
+      <div class="kotak kotak5">linear</div>
+      <div class="kotak kotak6">cubic-bezier</div>
     </div>
   </body>
 </html>
